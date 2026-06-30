@@ -1,0 +1,54 @@
+.cases{
+    padding:90px 0;
+    background:#fff;
+}
+
+.cases-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.case-card{
+    background:#fff;
+    border:1px solid #ececec;
+    transition:.35s ease;
+    overflow:hidden;
+}
+
+.case-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.case-image{
+    overflow:hidden;
+}
+
+.case-image img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.case-card:hover img{
+    transform:scale(1.08);
+}
+
+.case-content{
+    padding:28px;
+}
+
+.case-content h3{
+    font-size:18px;
+    color:#222;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.case-content p{
+    color:#777;
+    font-size:14px;
+    line-height:1.8;
+}

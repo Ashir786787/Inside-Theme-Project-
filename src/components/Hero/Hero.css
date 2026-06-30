@@ -1,0 +1,151 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.30);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 1200px;
+  max-width: 90%;
+
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.hero-content p {
+  width: 500px;
+  max-width: 100%;
+
+  color: rgba(255,255,255,.85);
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  margin-bottom: 40px;
+}
+
+.hero-content button {
+  background: #2f6df6;
+  color: white;
+
+  border: none;
+
+  padding: 14px 32px;
+
+  border-radius: 40px;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: .35s;
+}
+
+.hero-content button:hover {
+  background: #1955d6;
+  transform: translateY(-3px);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: rgba(255,255,255,.18);
+
+  color: white;
+
+  cursor: pointer;
+
+  z-index: 20;
+
+  transition: .3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+}
+
+.arrow:hover {
+  background: #2f6df6;
+}
+
+.left {
+  left: 35px;
+}
+
+.right {
+  right: 35px;
+}
+
+.slide.active .hero-content {
+  animation: heroFade 0.8s ease;
+}
+
+@keyframes heroFade {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
