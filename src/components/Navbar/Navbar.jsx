@@ -85,11 +85,11 @@ const MainNavbar = () => {
 
         </nav>
 
-        <button className="purchase-btn">
+        <a href="#contact" className="purchase-btn">
 
           PURCHASE
 
-        </button>
+        </a>
 
       </div>
 

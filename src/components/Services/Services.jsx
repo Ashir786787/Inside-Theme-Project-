@@ -3,7 +3,7 @@ import { services } from "../../data/services";
 
 const Services = () => {
   return (
-    <section className="services">
+    <section id="about" className="services">
 
       <div className="container">
 

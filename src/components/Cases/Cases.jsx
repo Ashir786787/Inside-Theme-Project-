@@ -4,7 +4,7 @@ import CaseCard from "./CaseCard";
 
 const Cases = () => {
   return (
-    <section className="cases">
+    <section id="cases" className="cases">
 
       <div className="container">
 

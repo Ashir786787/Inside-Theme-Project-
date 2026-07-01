@@ -8,6 +8,9 @@ import Features from "./components/Features/Features";
 import Stats from "./components/Stats/Stats";
 import Team from "./components/Team/Team";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Blog from "./components/Blog/Blog";
+import ContactCTA from "./components/ContactCTA/ContactCTA";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
       <Stats />
       <Team />
       <Testimonials />
+      <Blog />
+      <ContactCTA />
+      <Footer />
     </>
   );
 }

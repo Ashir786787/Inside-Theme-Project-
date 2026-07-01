@@ -9,7 +9,7 @@ import {
 
 const Features = () => {
   return (
-    <section className="features">
+    <section id="features" className="features">
 
       <div className="container">
 
