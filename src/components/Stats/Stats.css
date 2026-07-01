@@ -1,38 +1,63 @@
-.stats{
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+.stats {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.stats-overlay{
-    background:rgba(24,72,170,.88);
-    padding:90px 0;
+.stats-overlay {
+    background: rgba(24, 72, 170, .88);
+    padding: 90px 0;
 }
 
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
-    text-align:center;
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
 }
 
-.stat-item{
-    color:#fff;
+.stat-item {
+    color: #fff;
 }
 
-.stat-item svg{
-    font-size:42px;
-    margin-bottom:18px;
+.stat-item svg {
+    font-size: 42px;
+    margin-bottom: 18px;
 }
 
-.stat-item h2{
-    color:#fff;
-    font-size:42px;
-    font-weight:700;
-    margin-bottom:10px;
+.stat-item h2 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.stat-item p{
-    color:#fff;
-    font-size:15px;
+.stat-item p {
+    color: #fff;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .stat-item h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-overlay {
+        padding: 60px 0;
+    }
+    .stats-grid {
+        gap: 30px;
+    }
+    .stat-item svg {
+        font-size: 32px;
+    }
+    .stat-item h2 {
+        font-size: 28px;
+    }
 }

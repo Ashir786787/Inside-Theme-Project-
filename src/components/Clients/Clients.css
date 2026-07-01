@@ -35,3 +35,29 @@
 .client-logo:hover img {
     filter: grayscale(0%);
 }
+
+@media (max-width: 768px) {
+    .clients-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .client-logo {
+        flex: 0 0 calc(33.33% - 20px);
+    }
+    .client-logo img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .clients {
+        padding: 30px 0;
+    }
+    .client-logo {
+        flex: 0 0 calc(50% - 20px);
+    }
+    .client-logo img {
+        max-width: 80px;
+    }
+}
